@@ -18,9 +18,9 @@ Results from API calls are cached for up to a minute after retrieval to minimize
 
 ## Code Structure ##
 
-Command prompt parsing in cli.py
-Main coding functionality in mbta.py
-Tests in tests.py
+* Command prompt parsing in cli.py
+* Main coding functionality in mbta.py
+* Tests in tests.py
   
 ## Design Discussion ##
 
