@@ -15,6 +15,12 @@ to see documentation for the available commands. These are:
   * Lists routes which can be traversed in order to go from STOP\_1 to STOP\_2. This function looks for the shortest route in terms of number of route transfers, not in terms of total stops travelled. Depending on the commuter in question, either of these methods could be considered optimal.
   
 Results from API calls are cached for up to a minute after retrieval to minimize API calls. This may lead to slightly stale information if the MBTA route has very recently changed.
+
+## Code Structure ##
+
+Command prompt parsing in cli.py
+Main coding functionality in mbta.py
+Tests in tests.py
   
 ## Design Discussion ##
 
