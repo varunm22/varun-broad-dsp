@@ -4,10 +4,6 @@ import time
 from collections import defaultdict
 import itertools
 
-# TODO: DOC: picked relying on server to filter because i think it's more likely they
-# change fields in output than that they change interface
-# also sending less things over network, so it's more efficient that way
-
 cache = defaultdict(lambda:{"time":time.time(), "data": None})
 # auth = HTTPBasicAuth('apikey', '4150ca5a315a4ed49e810ded5f96af08')
 headers = {'api_key': '4150ca5a315a4ed49e810ded5f96af08'}
@@ -61,7 +57,6 @@ This function lists some route statistics including:
 - route with most stops
 - all stops which are part of multiple routes (and what those are)
 '''
-#TODO: DOC: excluding full green ones
 def route_stats():
     def all_green(stops):
         return all(s[:5] == "Green" for s in stops)
