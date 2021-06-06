@@ -5,7 +5,6 @@ from collections import defaultdict
 import itertools
 
 cache = defaultdict(lambda:{"time":time.time(), "data": None})
-# auth = HTTPBasicAuth('apikey', '4150ca5a315a4ed49e810ded5f96af08')
 headers = {'api_key': '4150ca5a315a4ed49e810ded5f96af08'}
 
 def get_routes():
